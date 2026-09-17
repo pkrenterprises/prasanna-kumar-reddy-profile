@@ -1,0 +1,16 @@
+{
+  "name": "Prasanna Kumar Reddy \u2014 Official Profile",
+  "short_name": "Prasanna Kumar Reddy",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#07111f",
+  "theme_color": "#07111f",
+  "icons": [
+    {
+      "src": "assets/profile.jpg",
+      "sizes": "900x1600",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ]
+}
