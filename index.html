@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>M Prasanna Kumar Reddy | Founder & CEO | PKR Groups</title>
@@ -12,17 +11,15 @@
     content="Official profile of M Prasanna Kumar Reddy, Founder & CEO associated with PKR Groups, PKR Enterprises and PKR Tech."
   >
 
-  <meta
-    name="keywords"
-    content="M Prasanna Kumar Reddy, Prasanna Kumar Reddy, M Prasanna, PKR, PKR Groups, PKR Enterprises, PKR Tech, Founder CEO"
-  >
-
   <meta name="author" content="M Prasanna Kumar Reddy">
 
   <meta
-    name="google-site-verification"
-    content="y1ZJK0pP5r9n_kd8NpFTXzUaCTmmSCb6CFv7F-c-aFs"
+    name="keywords"
+    content="M Prasanna Kumar Reddy, Prasanna Kumar Reddy, M Prasanna, PKR Groups, PKR Enterprises, PKR Tech"
   >
+
+  <meta name="google-site-verification"
+    content="y1ZJK0pP5r9n_kd8NpFTXzUaCTmmSCb6CFv7F-c-aFs">
 
   <link
     rel="canonical"
@@ -31,75 +28,63 @@
 
   <link rel="manifest" href="/site.webmanifest">
 
-  <meta name="theme-color" content="#0b1220">
+  <meta name="theme-color" content="#0a0d14">
 
   <!-- Open Graph -->
   <meta property="og:type" content="profile">
-  <meta
-    property="og:title"
-    content="M Prasanna Kumar Reddy | Founder & CEO"
-  >
-  <meta
-    property="og:description"
-    content="Official profile of M Prasanna Kumar Reddy, Founder & CEO associated with PKR Groups."
-  >
-  <meta
-    property="og:url"
-    content="https://prasannakumarreddy.sarvampada.info/"
-  >
-  <meta
-    property="og:image"
-    content="https://prasannakumarreddy.sarvampada.info/assets/profile.jpg"
-  >
-  <meta property="og:site_name" content="M Prasanna Kumar Reddy">
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta
-    name="twitter:title"
-    content="M Prasanna Kumar Reddy | Founder & CEO"
-  >
-  <meta
-    name="twitter:description"
-    content="Official profile of M Prasanna Kumar Reddy."
-  >
-  <meta
-    name="twitter:image"
-    content="https://prasannakumarreddy.sarvampada.info/assets/profile.jpg"
-  >
+  <meta property="og:title"
+    content="M Prasanna Kumar Reddy | Founder & CEO">
+  <meta property="og:description"
+    content="Official profile of M Prasanna Kumar Reddy, Founder & CEO associated with PKR Groups.">
+  <meta property="og:url"
+    content="https://prasannakumarreddy.sarvampada.info/">
+  <meta property="og:image"
+    content="https://prasannakumarreddy.sarvampada.info/assets/profile.jpg">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
     rel="stylesheet"
   >
 
   <style>
+
+    /* =========================================================
+       ROOT
+    ========================================================= */
+
     :root {
-      --bg: #f5f7fb;
-      --surface: #ffffff;
-      --surface-dark: #0b1220;
-      --surface-dark-2: #111b2e;
+      --black: #080b11;
+      --black-2: #0e131c;
+      --black-3: #151c28;
 
-      --text: #172033;
-      --text-soft: #657087;
-      --text-light: #dce4f2;
+      --white: #ffffff;
+      --off-white: #f7f8fa;
 
-      --primary: #14213d;
-      --primary-2: #243b68;
+      --text: #151a24;
+      --muted: #6e7788;
 
-      --accent: #c89b3c;
-      --accent-light: #e7c875;
+      --gold: #c9a24d;
+      --gold-light: #e5cb86;
 
-      --border: #e5e9f1;
-      --shadow: 0 20px 50px rgba(16, 24, 40, 0.09);
+      --line: #e5e8ee;
 
-      --radius: 22px;
-      --container: 1180px;
+      --container: 1200px;
+
+      --radius-lg: 28px;
+      --radius-md: 18px;
+
+      --shadow:
+        0 25px 70px rgba(10, 15, 25, 0.09);
     }
+
+
+    /* =========================================================
+       RESET
+    ========================================================= */
 
     * {
       margin: 0;
@@ -113,1022 +98,1428 @@
 
     body {
       font-family: "DM Sans", sans-serif;
-      background: var(--bg);
       color: var(--text);
-      line-height: 1.65;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
+      background: var(--off-white);
+      line-height: 1.7;
     }
 
     img {
-      display: block;
       max-width: 100%;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    button {
+      font: inherit;
     }
 
     .container {
-      width: min(1180px, calc(100% - 40px));
+      width: min(
+        var(--container),
+        calc(100% - 44px)
+      );
+
       margin: auto;
     }
 
-    /* =========================
-       TOP HEADER
-    ========================== */
 
-    .topbar {
+    /* =========================================================
+       HEADER
+       ========================================================= */
+
+    .header {
       position: sticky;
       top: 0;
-      z-index: 1000;
-      background: rgba(11, 18, 32, 0.96);
-      backdrop-filter: blur(16px);
-      border-bottom: 1px solid rgba(255,255,255,0.08);
+      z-index: 999;
+
+      background: rgba(8, 11, 17, 0.94);
+      backdrop-filter: blur(18px);
+
+      border-bottom:
+        1px solid rgba(255,255,255,0.07);
     }
 
-    .topbar-inner {
-      min-height: 76px;
+    .header-inner {
+      min-height: 78px;
+
       display: flex;
       align-items: center;
       justify-content: space-between;
+
       gap: 30px;
     }
 
-    /* IMPORTANT:
-       No profile picture/avatar exists in the header.
-    */
+    .header-name {
+      color: white;
 
-    .brand {
-      display: inline-flex;
-      align-items: center;
-      min-width: 0;
-    }
+      font-family: "Manrope", sans-serif;
 
-    .brand-name {
-      color: #ffffff;
-      font-size: 18px;
-      font-weight: 700;
-      letter-spacing: -0.2px;
+      font-size: 17px;
+      font-weight: 800;
+
+      letter-spacing: -0.3px;
+
       white-space: nowrap;
     }
 
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 24px;
+    .header-name span {
+      color: var(--gold-light);
     }
 
-    .nav-links a {
-      color: #bfc9db;
-      font-size: 14px;
-      font-weight: 500;
+    .navigation {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+
+    .navigation a {
+      color: #aeb7c8;
+
+      font-size: 13px;
+      font-weight: 600;
+
       transition: 0.25s ease;
     }
 
-    .nav-links a:hover {
-      color: #ffffff;
+    .navigation a:hover {
+      color: white;
     }
 
-    .menu-toggle {
+    .header-contact {
+      padding: 10px 17px;
+
+      border: 1px solid rgba(255,255,255,0.16);
+
+      border-radius: 10px;
+
+      color: white !important;
+    }
+
+    .header-contact:hover {
+      background: rgba(255,255,255,0.07);
+    }
+
+    .mobile-menu {
       display: none;
+
       border: 0;
-      background: transparent;
-      color: #ffffff;
+      background: none;
+
+      color: white;
+
       font-size: 26px;
+
       cursor: pointer;
     }
 
-    /* =========================
+
+    /* =========================================================
        HERO
-    ========================== */
+       ========================================================= */
 
     .hero {
-      background:
-        radial-gradient(circle at 85% 15%, rgba(200,155,60,0.14), transparent 30%),
-        linear-gradient(135deg, #0b1220, #172746 65%, #0d1628);
-      color: #ffffff;
-      padding: 75px 0 85px;
-      overflow: hidden;
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 0.9fr 1.1fr;
-      align-items: stretch;
-      gap: 55px;
-    }
-
-    .hero-photo {
       position: relative;
-      min-height: 590px;
-      border-radius: 30px;
+
+      background:
+        radial-gradient(
+          circle at 75% 20%,
+          rgba(201,162,77,0.14),
+          transparent 28%
+        ),
+
+        linear-gradient(
+          135deg,
+          #080b11,
+          #101725 65%,
+          #0a0e16
+        );
+
+      color: white;
+
       overflow: hidden;
-      background: #1c2940;
-      box-shadow: 0 35px 80px rgba(0,0,0,0.28);
     }
 
-    .hero-photo img {
+    .hero::before {
+      content: "";
+
+      position: absolute;
+
+      width: 520px;
+      height: 520px;
+
+      border: 1px solid
+        rgba(255,255,255,0.04);
+
+      border-radius: 50%;
+
+      right: -200px;
+      top: -200px;
+    }
+
+    .hero-inner {
+      min-height: 720px;
+
+      display: grid;
+
+      grid-template-columns:
+        0.86fr 1.14fr;
+
+      align-items: center;
+
+      gap: 70px;
+
+      padding: 75px 0;
+    }
+
+
+    /* PHOTO */
+
+    .hero-image-wrap {
+      position: relative;
+
+      height: 600px;
+
+      border-radius: 30px;
+
+      overflow: hidden;
+
+      background: #182131;
+
+      box-shadow:
+        0 35px 100px rgba(0,0,0,0.35);
+    }
+
+    .hero-image-wrap img {
       width: 100%;
       height: 100%;
-      min-height: 590px;
+
       object-fit: cover;
+
       object-position: center top;
     }
 
-    .hero-photo::after {
-      content: "";
+    .hero-image-overlay {
       position: absolute;
+
       inset: auto 0 0 0;
-      height: 35%;
-      background: linear-gradient(
-        to top,
-        rgba(7,12,22,0.58),
-        transparent
-      );
-      pointer-events: none;
+
+      height: 38%;
+
+      background:
+        linear-gradient(
+          to top,
+          rgba(5,8,14,0.72),
+          transparent
+        );
     }
+
+    .photo-label {
+      position: absolute;
+
+      bottom: 24px;
+      left: 24px;
+
+      display: flex;
+      align-items: center;
+
+      gap: 9px;
+
+      padding: 10px 14px;
+
+      border-radius: 10px;
+
+      background:
+        rgba(0,0,0,0.45);
+
+      backdrop-filter: blur(10px);
+
+      border:
+        1px solid rgba(255,255,255,0.12);
+
+      color: #e7ebf2;
+
+      font-size: 11px;
+      font-weight: 700;
+
+      letter-spacing: 0.8px;
+
+      text-transform: uppercase;
+    }
+
+    .photo-label::before {
+      content: "";
+
+      width: 7px;
+      height: 7px;
+
+      border-radius: 50%;
+
+      background: var(--gold);
+    }
+
+
+    /* HERO CONTENT */
 
     .hero-content {
+      max-width: 700px;
+    }
+
+    .hero-kicker {
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 20px 0;
-    }
-
-    .eyebrow {
-      display: inline-flex;
-      width: fit-content;
       align-items: center;
-      gap: 9px;
-      color: var(--accent-light);
-      font-size: 13px;
-      font-weight: 700;
-      letter-spacing: 1.5px;
+
+      gap: 12px;
+
+      color: var(--gold-light);
+
+      font-size: 12px;
+
+      font-weight: 800;
+
+      letter-spacing: 2px;
+
       text-transform: uppercase;
-      margin-bottom: 18px;
+
+      margin-bottom: 20px;
     }
 
-    .eyebrow::before {
+    .hero-kicker::before {
       content: "";
-      width: 30px;
-      height: 2px;
-      background: var(--accent);
+
+      width: 38px;
+      height: 1px;
+
+      background: var(--gold);
     }
 
-    .hero h1 {
+    .hero-title {
       font-family: "Playfair Display", serif;
-      font-size: clamp(44px, 6vw, 72px);
-      line-height: 1.03;
+
+      font-size:
+        clamp(48px, 6vw, 76px);
+
+      line-height: 1.04;
+
       letter-spacing: -2px;
+
       margin-bottom: 18px;
+    }
+
+    .hero-title span {
+      display: block;
+
+      color: var(--gold-light);
     }
 
     .hero-role {
+      font-family: "Manrope", sans-serif;
+
       font-size: 20px;
-      font-weight: 600;
-      color: #e8edf6;
+
+      font-weight: 700;
+
+      color: #edf1f7;
+
       margin-bottom: 22px;
     }
 
-    .hero-description {
-      max-width: 650px;
-      color: #bac5d8;
-      font-size: 17px;
-      line-height: 1.8;
-      margin-bottom: 28px;
-    }
+    .hero-text {
+      max-width: 670px;
 
-    .hero-info {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 12px;
+      color: #aeb9ca;
+
+      font-size: 16px;
+
+      line-height: 1.9;
+
       margin-bottom: 30px;
     }
 
-    .info-card {
+
+    /* HERO DETAILS */
+
+    .hero-details {
+      display: grid;
+
+      grid-template-columns:
+        repeat(2, minmax(0,1fr));
+
+      gap: 10px;
+
+      margin-bottom: 30px;
+    }
+
+    .hero-detail {
       padding: 15px 17px;
-      border: 1px solid rgba(255,255,255,0.09);
-      border-radius: 14px;
-      background: rgba(255,255,255,0.045);
+
+      background:
+        rgba(255,255,255,0.035);
+
+      border:
+        1px solid rgba(255,255,255,0.08);
+
+      border-radius: 13px;
     }
 
-    .info-label {
+    .hero-detail small {
       display: block;
-      color: #91a0b8;
-      font-size: 11px;
-      text-transform: uppercase;
+
+      color: #78869c;
+
+      font-size: 10px;
+
+      font-weight: 700;
+
       letter-spacing: 1px;
-      margin-bottom: 4px;
+
+      text-transform: uppercase;
+
+      margin-bottom: 3px;
     }
 
-    .info-value {
-      color: #ffffff;
-      font-size: 14px;
-      font-weight: 600;
+    .hero-detail strong {
+      color: #f7f9fc;
+
+      font-size: 13px;
     }
 
-    .hero-actions {
+
+    /* HERO BUTTONS */
+
+    .hero-buttons {
       display: flex;
+
       flex-wrap: wrap;
-      gap: 12px;
+
+      gap: 11px;
     }
 
-    .btn {
+    .button {
       display: inline-flex;
+
       align-items: center;
       justify-content: center;
+
       min-height: 48px;
-      padding: 0 20px;
-      border-radius: 12px;
-      font-size: 14px;
-      font-weight: 700;
+
+      padding: 0 21px;
+
+      border-radius: 11px;
+
+      font-size: 13px;
+
+      font-weight: 800;
+
       transition: 0.25s ease;
     }
 
-    .btn-primary {
-      background: var(--accent);
-      color: #101828;
+    .button-gold {
+      color: #11151d;
+
+      background: var(--gold);
     }
 
-    .btn-primary:hover {
+    .button-gold:hover {
+      background: var(--gold-light);
+
       transform: translateY(-2px);
-      background: var(--accent-light);
     }
 
-    .btn-outline {
-      border: 1px solid rgba(255,255,255,0.18);
-      color: #ffffff;
-      background: rgba(255,255,255,0.03);
+    .button-outline {
+      color: white;
+
+      border:
+        1px solid rgba(255,255,255,0.17);
+
+      background:
+        rgba(255,255,255,0.025);
     }
 
-    .btn-outline:hover {
-      background: rgba(255,255,255,0.09);
+    .button-outline:hover {
+      background:
+        rgba(255,255,255,0.08);
     }
 
-    /* =========================
-       METRICS
-    ========================== */
 
-    .metrics {
-      margin-top: -30px;
+    /* =========================================================
+       MILESTONE BAR
+       ========================================================= */
+
+    .milestone-section {
       position: relative;
+
+      margin-top: -45px;
+
       z-index: 5;
     }
 
-    .metrics-grid {
+    .milestones {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-    }
 
-    .metric {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 24px;
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      background: white;
+
+      border: 1px solid var(--line);
+
+      border-radius: 20px;
+
       box-shadow: var(--shadow);
+
+      overflow: hidden;
     }
 
-    .metric-number {
-      font-family: "Playfair Display", serif;
-      font-size: 36px;
+    .milestone {
+      padding: 27px 30px;
+
+      border-right:
+        1px solid var(--line);
+    }
+
+    .milestone:last-child {
+      border-right: 0;
+    }
+
+    .milestone-year {
+      font-family: "Manrope", sans-serif;
+
+      font-size: 30px;
+
       font-weight: 800;
-      color: var(--primary);
+
+      color: var(--black);
+
+      margin-bottom: 3px;
     }
 
-    .metric-label {
-      color: var(--text-soft);
-      font-size: 13px;
-      margin-top: 2px;
+    .milestone-text {
+      color: var(--muted);
+
+      font-size: 12px;
     }
 
-    /* =========================
-       SECTIONS
-    ========================== */
 
-    section {
-      padding: 90px 0;
+    /* =========================================================
+       GENERAL SECTION
+       ========================================================= */
+
+    .section {
+      padding: 105px 0;
+    }
+
+    .section-light {
+      background: var(--off-white);
+    }
+
+    .section-white {
+      background: white;
     }
 
     .section-heading {
       max-width: 720px;
-      margin-bottom: 42px;
+
+      margin-bottom: 48px;
     }
 
-    .section-kicker {
-      color: #9b7427;
-      font-size: 12px;
+    .section-label {
+      color: #a07a2d;
+
+      font-size: 11px;
+
       font-weight: 800;
-      letter-spacing: 1.6px;
+
+      letter-spacing: 2px;
+
       text-transform: uppercase;
+
       margin-bottom: 9px;
     }
 
-    .section-heading h2 {
+    .section-title {
       font-family: "Playfair Display", serif;
-      color: var(--primary);
-      font-size: clamp(32px, 4vw, 48px);
+
+      font-size:
+        clamp(34px, 4vw, 49px);
+
       line-height: 1.15;
+
       letter-spacing: -1px;
-      margin-bottom: 12px;
-    }
 
-    .section-heading p {
-      color: var(--text-soft);
-      font-size: 16px;
-    }
+      color: var(--black);
 
-    /* =========================
-       ABOUT
-    ========================== */
-
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 30px;
-    }
-
-    .card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 32px;
-      box-shadow: 0 12px 35px rgba(16,24,40,0.05);
-    }
-
-    .card h3 {
-      font-family: "Playfair Display", serif;
-      color: var(--primary);
-      font-size: 26px;
       margin-bottom: 13px;
     }
 
-    .card p {
-      color: var(--text-soft);
+    .section-description {
+      color: var(--muted);
+
+      font-size: 15px;
+
+      line-height: 1.8;
     }
 
-    .detail-list {
+
+    /* =========================================================
+       ABOUT
+       ========================================================= */
+
+    .about-layout {
       display: grid;
-      gap: 14px;
+
+      grid-template-columns:
+        1.15fr 0.85fr;
+
+      gap: 25px;
     }
 
-    .detail-row {
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-      padding-bottom: 12px;
-      border-bottom: 1px solid var(--border);
+    .about-main {
+      background: white;
+
+      border:
+        1px solid var(--line);
+
+      border-radius: var(--radius-lg);
+
+      padding: 40px;
+
+      box-shadow:
+        0 12px 40px rgba(10,15,25,0.04);
     }
 
-    .detail-row:last-child {
-      border-bottom: 0;
-      padding-bottom: 0;
-    }
-
-    .detail-row span:first-child {
-      color: var(--text-soft);
-      font-size: 13px;
-    }
-
-    .detail-row span:last-child {
-      color: var(--text);
-      font-size: 14px;
-      font-weight: 700;
-      text-align: right;
-    }
-
-    /* =========================
-       ORGANIZATIONS
-    ========================== */
-
-    .organizations {
-      background: #eef2f8;
-    }
-
-    .org-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
-
-    .org-card {
-      background: #ffffff;
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      padding: 30px;
-      min-height: 280px;
-      display: flex;
-      flex-direction: column;
-      box-shadow: 0 10px 30px rgba(16,24,40,0.04);
-      transition: 0.25s ease;
-    }
-
-    .org-card:hover {
-      transform: translateY(-5px);
-      box-shadow: var(--shadow);
-    }
-
-    .org-number {
-      color: #9b7427;
-      font-size: 12px;
-      font-weight: 800;
-      letter-spacing: 1px;
-      margin-bottom: 22px;
-    }
-
-    .org-card h3 {
+    .about-main h3 {
       font-family: "Playfair Display", serif;
+
       font-size: 29px;
-      color: var(--primary);
-      margin-bottom: 6px;
+
+      margin-bottom: 16px;
     }
 
-    .org-role {
-      color: #9b7427;
-      font-size: 13px;
-      font-weight: 700;
+    .about-main p {
+      color: var(--muted);
+
+      font-size: 15px;
+
+      line-height: 1.9;
+
       margin-bottom: 17px;
     }
 
-    .org-card p {
-      color: var(--text-soft);
-      font-size: 14px;
-      margin-bottom: 20px;
+    .about-side {
+      background:
+        linear-gradient(
+          145deg,
+          var(--black),
+          var(--black-3)
+        );
+
+      color: white;
+
+      border-radius: var(--radius-lg);
+
+      padding: 40px;
     }
 
-    .org-meta {
-      margin-top: auto;
-      padding-top: 16px;
-      border-top: 1px solid var(--border);
-      color: #7b8495;
-      font-size: 12px;
+    .about-side h3 {
+      font-family: "Playfair Display", serif;
+
+      font-size: 28px;
+
+      margin-bottom: 25px;
     }
 
-    /* =========================
-       BUSINESS & TECHNOLOGY
-    ========================== */
-
-    .feature-grid {
+    .personal-list {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+
+      gap: 16px;
+    }
+
+    .personal-row {
+      display: grid;
+
+      grid-template-columns:
+        110px 1fr;
+
+      gap: 15px;
+
+      padding-bottom: 14px;
+
+      border-bottom:
+        1px solid rgba(255,255,255,0.08);
+    }
+
+    .personal-row:last-child {
+      border-bottom: 0;
+    }
+
+    .personal-row span {
+      color: #8190a6;
+
+      font-size: 11px;
+
+      font-weight: 700;
+
+      text-transform: uppercase;
+
+      letter-spacing: 0.6px;
+    }
+
+    .personal-row strong {
+      color: #f5f7fa;
+
+      font-size: 13px;
+
+      font-weight: 600;
+    }
+
+
+    /* =========================================================
+       ORGANIZATIONS
+       ========================================================= */
+
+    .organization-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(3,1fr);
+
       gap: 20px;
     }
 
-    .feature-card {
-      border-radius: 20px;
-      background: var(--surface-dark);
-      color: #ffffff;
-      padding: 30px;
-      min-height: 245px;
+    .organization {
+      position: relative;
+
+      background: white;
+
+      border:
+        1px solid var(--line);
+
+      border-radius: 21px;
+
+      padding: 31px;
+
+      min-height: 315px;
+
+      overflow: hidden;
+
+      transition: 0.3s ease;
     }
 
-    .feature-icon {
-      width: 48px;
-      height: 48px;
-      display: grid;
-      place-items: center;
-      border-radius: 14px;
-      background: rgba(200,155,60,0.13);
-      color: var(--accent-light);
-      font-size: 21px;
-      margin-bottom: 24px;
+    .organization:hover {
+      transform: translateY(-6px);
+
+      box-shadow: var(--shadow);
     }
 
-    .feature-card h3 {
+    .organization-number {
+      color: #b49350;
+
+      font-size: 11px;
+
+      font-weight: 800;
+
+      letter-spacing: 1.5px;
+
+      margin-bottom: 28px;
+    }
+
+    .organization h3 {
       font-family: "Playfair Display", serif;
-      font-size: 24px;
-      margin-bottom: 10px;
+
+      font-size: 29px;
+
+      color: var(--black);
+
+      margin-bottom: 6px;
     }
 
-    .feature-card p {
-      color: #aebbd0;
-      font-size: 14px;
+    .organization-role {
+      color: #a17c31;
+
+      font-size: 12px;
+
+      font-weight: 800;
+
+      text-transform: uppercase;
+
+      letter-spacing: 0.8px;
+
+      margin-bottom: 19px;
     }
 
-    /* =========================
+    .organization p {
+      color: var(--muted);
+
+      font-size: 13px;
+
+      line-height: 1.75;
+    }
+
+    .organization-footer {
+      position: absolute;
+
+      left: 31px;
+      right: 31px;
+      bottom: 25px;
+
+      padding-top: 15px;
+
+      border-top:
+        1px solid var(--line);
+
+      color: #8a93a2;
+
+      font-size: 11px;
+    }
+
+
+    /* =========================================================
        JOURNEY
-    ========================== */
+       ========================================================= */
+
+    .journey-section {
+      background: #f0f2f6;
+    }
 
     .journey {
-      background: #eef2f8;
-    }
+      max-width: 940px;
 
-    .timeline {
-      position: relative;
-      max-width: 900px;
       margin: auto;
     }
 
-    .timeline::before {
-      content: "";
-      position: absolute;
-      left: 82px;
-      top: 5px;
-      bottom: 5px;
-      width: 1px;
-      background: #d3d9e4;
-    }
-
-    .timeline-item {
-      position: relative;
+    .journey-item {
       display: grid;
-      grid-template-columns: 165px 1fr;
-      gap: 35px;
-      margin-bottom: 38px;
+
+      grid-template-columns:
+        125px 1fr;
+
+      gap: 30px;
+
+      position: relative;
+
+      padding-bottom: 30px;
     }
 
-    .timeline-year {
-      font-family: "Playfair Display", serif;
-      font-size: 25px;
-      font-weight: 800;
-      color: var(--primary);
+    .journey-item:last-child {
+      padding-bottom: 0;
     }
 
-    .timeline-dot {
+    .journey-item::before {
+      content: "";
+
       position: absolute;
-      left: 76px;
+
+      left: 105px;
+
       top: 8px;
+
+      bottom: -1px;
+
+      width: 1px;
+
+      background: #d3d8e0;
+    }
+
+    .journey-item:last-child::before {
+      display: none;
+    }
+
+    .journey-year {
+      font-family: "Playfair Display", serif;
+
+      font-size: 22px;
+
+      font-weight: 700;
+
+      color: var(--black);
+    }
+
+    .journey-dot {
+      position: absolute;
+
+      left: 99px;
+
+      top: 5px;
+
       width: 13px;
       height: 13px;
+
       border-radius: 50%;
-      background: var(--accent);
-      border: 3px solid #eef2f8;
-      box-shadow: 0 0 0 1px var(--accent);
+
+      background: var(--gold);
+
+      border:
+        3px solid #f0f2f6;
+
+      box-shadow:
+        0 0 0 1px var(--gold);
     }
 
-    .timeline-content {
-      background: #ffffff;
-      border: 1px solid var(--border);
+    .journey-card {
+      background: white;
+
+      border:
+        1px solid var(--line);
+
       border-radius: 17px;
-      padding: 23px 25px;
+
+      padding: 24px 27px;
     }
 
-    .timeline-content h3 {
+    .journey-card h3 {
       font-family: "Playfair Display", serif;
-      font-size: 23px;
-      color: var(--primary);
+
+      font-size: 22px;
+
       margin-bottom: 7px;
     }
 
-    .timeline-content p {
-      color: var(--text-soft);
-      font-size: 14px;
+    .journey-card p {
+      color: var(--muted);
+
+      font-size: 13px;
     }
 
-    /* =========================
-       EDUCATION
-    ========================== */
 
-    .education-grid {
-      display: grid;
-      gap: 15px;
+    /* =========================================================
+       TECHNOLOGY
+       ========================================================= */
+
+    .technology {
+      background:
+        linear-gradient(
+          135deg,
+          #080b11,
+          #111a29
+        );
+
+      color: white;
     }
 
-    .education-item {
+    .technology-grid {
       display: grid;
-      grid-template-columns: 170px 1fr auto;
+
+      grid-template-columns:
+        0.9fr 1.1fr;
+
+      gap: 70px;
+
       align-items: center;
+    }
+
+    .technology .section-title {
+      color: white;
+    }
+
+    .technology .section-description {
+      color: #aeb9ca;
+    }
+
+    .technology-list {
+      display: grid;
+
+      grid-template-columns:
+        repeat(2,1fr);
+
+      gap: 12px;
+    }
+
+    .technology-item {
+      padding: 23px;
+
+      border:
+        1px solid rgba(255,255,255,0.08);
+
+      background:
+        rgba(255,255,255,0.035);
+
+      border-radius: 15px;
+    }
+
+    .technology-item strong {
+      display: block;
+
+      font-size: 14px;
+
+      margin-bottom: 6px;
+    }
+
+    .technology-item span {
+      color: #93a1b6;
+
+      font-size: 12px;
+
+      line-height: 1.6;
+    }
+
+
+    /* =========================================================
+       EDUCATION
+       ========================================================= */
+
+    .education-list {
+      display: grid;
+
+      gap: 12px;
+    }
+
+    .education {
+      display: grid;
+
+      grid-template-columns:
+        140px 1fr auto;
+
+      align-items: center;
+
       gap: 25px;
-      background: #ffffff;
-      border: 1px solid var(--border);
+
+      background: white;
+
+      border:
+        1px solid var(--line);
+
       border-radius: 16px;
-      padding: 22px 25px;
+
+      padding: 21px 24px;
     }
 
     .education-year {
-      color: #9b7427;
+      color: #9c762c;
+
+      font-size: 12px;
+
       font-weight: 800;
-      font-size: 13px;
     }
 
-    .education-item h3 {
-      font-size: 17px;
-      margin-bottom: 4px;
+    .education h3 {
+      font-size: 15px;
+
+      margin-bottom: 3px;
     }
 
-    .education-item p {
-      color: var(--text-soft);
-      font-size: 13px;
+    .education p {
+      color: var(--muted);
+
+      font-size: 12px;
     }
 
     .education-result {
       font-weight: 800;
-      color: var(--primary);
-      font-size: 14px;
-    }
 
-    /* =========================
-       PKR TECH
-    ========================== */
-
-    .tech-section {
-      background:
-        linear-gradient(135deg, #0b1220, #14233d);
-      color: #ffffff;
-    }
-
-    .tech-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 35px;
-      align-items: center;
-    }
-
-    .tech-section .section-kicker {
-      color: var(--accent-light);
-    }
-
-    .tech-section h2 {
-      color: #ffffff;
-    }
-
-    .tech-section .section-heading p {
-      color: #afbdd2;
-    }
-
-    .tech-list {
-      display: grid;
-      gap: 12px;
-    }
-
-    .tech-item {
-      padding: 18px 20px;
-      border: 1px solid rgba(255,255,255,0.08);
-      background: rgba(255,255,255,0.04);
-      border-radius: 14px;
-    }
-
-    .tech-item strong {
-      display: block;
-      margin-bottom: 4px;
-    }
-
-    .tech-item span {
-      color: #aebbd0;
       font-size: 13px;
+
+      color: var(--black);
     }
 
-    /* =========================
-       BRAND PHILOSOPHY
-    ========================== */
+
+    /* =========================================================
+       PHILOSOPHY
+       ========================================================= */
 
     .philosophy {
       text-align: center;
+
+      background: white;
     }
 
-    .quote-box {
-      max-width: 850px;
+    .philosophy-box {
+      max-width: 900px;
+
       margin: auto;
-      background: #ffffff;
-      border: 1px solid var(--border);
-      border-radius: 25px;
-      padding: 55px 40px;
+
+      padding: 65px 45px;
+
+      border:
+        1px solid var(--line);
+
+      border-radius: 27px;
+
       box-shadow: var(--shadow);
     }
 
-    .quote-mark {
+    .philosophy-mark {
+      color: var(--gold);
+
       font-family: Georgia, serif;
+
       font-size: 65px;
+
       line-height: 0.5;
-      color: var(--accent);
-      margin-bottom: 25px;
+
+      margin-bottom: 24px;
     }
 
-    .quote-box blockquote {
+    .philosophy-text {
       font-family: "Playfair Display", serif;
-      color: var(--primary);
-      font-size: clamp(27px, 4vw, 43px);
-      line-height: 1.25;
+
+      color: var(--black);
+
+      font-size:
+        clamp(28px,4vw,44px);
+
+      line-height: 1.3;
     }
 
-    /* =========================
-       VALUES
-    ========================== */
 
-    .values-grid {
+    /* =========================================================
+       SOCIAL
+       ========================================================= */
+
+    .social-grid {
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
+
+      grid-template-columns:
+        repeat(4,1fr);
+
       gap: 13px;
     }
 
-    .value {
-      background: #ffffff;
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 23px 15px;
-      text-align: center;
-    }
+    .social {
+      background: white;
 
-    .value strong {
-      display: block;
-      color: var(--primary);
-      font-size: 14px;
-      margin-bottom: 5px;
-    }
+      border:
+        1px solid var(--line);
 
-    .value span {
-      color: var(--text-soft);
-      font-size: 12px;
-    }
-
-    /* =========================
-       SOCIAL PROFILES
-    ========================== */
-
-    .profiles {
-      background: #eef2f8;
-    }
-
-    .profile-links {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 15px;
-    }
-
-    .profile-link {
-      background: #ffffff;
-      border: 1px solid var(--border);
       border-radius: 15px;
-      padding: 19px;
+
+      padding: 20px;
+
       text-align: center;
-      font-weight: 700;
-      font-size: 14px;
+
+      font-size: 13px;
+
+      font-weight: 800;
+
       transition: 0.25s ease;
     }
 
-    .profile-link:hover {
-      transform: translateY(-3px);
+    .social:hover {
+      transform: translateY(-4px);
+
       box-shadow: var(--shadow);
     }
 
-    /* =========================
+
+    /* =========================================================
        CONTACT
-    ========================== */
+       ========================================================= */
 
     .contact-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+
+      grid-template-columns:
+        repeat(2,1fr);
+
       gap: 20px;
     }
 
     .contact-card {
-      background: var(--surface-dark);
-      color: #ffffff;
+      background:
+        linear-gradient(
+          145deg,
+          var(--black),
+          var(--black-3)
+        );
+
+      color: white;
+
       border-radius: 22px;
-      padding: 32px;
+
+      padding: 34px;
     }
 
     .contact-card h3 {
       font-family: "Playfair Display", serif;
+
       font-size: 28px;
-      margin-bottom: 15px;
+
+      margin-bottom: 5px;
     }
 
-    .contact-card p {
-      color: #aebbd0;
-      margin-bottom: 18px;
-      font-size: 14px;
+    .contact-role {
+      color: var(--gold-light);
+
+      font-size: 11px;
+
+      font-weight: 800;
+
+      letter-spacing: 1px;
+
+      text-transform: uppercase;
+
+      margin-bottom: 25px;
     }
 
-    .contact-item {
-      padding: 13px 0;
-      border-bottom: 1px solid rgba(255,255,255,0.08);
-      font-size: 14px;
+    .contact-row {
+      padding: 12px 0;
+
+      border-bottom:
+        1px solid rgba(255,255,255,0.08);
+
+      color: #b3bfd0;
+
+      font-size: 13px;
     }
 
-    .contact-item:last-child {
+    .contact-row:last-child {
       border-bottom: 0;
     }
 
-    .contact-item strong {
-      color: #ffffff;
-      margin-right: 7px;
+    .contact-row strong {
+      color: white;
+
+      margin-right: 6px;
     }
 
-    /* =========================
-       FOOTER
-    ========================== */
 
-    footer {
-      background: #070c16;
-      color: #9ba7ba;
+    /* =========================================================
+       FOOTER
+       ========================================================= */
+
+    .footer {
+      background: #05070b;
+
+      color: #7e899b;
+
       padding: 35px 0;
     }
 
     .footer-inner {
       display: flex;
-      align-items: center;
+
       justify-content: space-between;
+
+      align-items: center;
+
       gap: 20px;
     }
 
-    .footer-brand {
-      color: #ffffff;
-      font-weight: 700;
+    .footer-name {
+      color: white;
+
+      font-weight: 800;
+
+      font-size: 14px;
     }
 
     .footer-copy {
-      font-size: 12px;
+      font-size: 11px;
     }
 
-    /* =========================
-       MOBILE
-    ========================== */
 
-    @media (max-width: 1000px) {
-      .nav-links {
-        gap: 14px;
+    /* =========================================================
+       RESPONSIVE
+    ========================================================= */
+
+    @media (max-width: 1050px) {
+
+      .navigation {
+        gap: 15px;
       }
 
-      .nav-links a {
-        font-size: 13px;
+      .hero-inner {
+        gap: 45px;
       }
 
-      .hero-grid {
-        grid-template-columns: 1fr;
+      .hero-title {
+        font-size: 58px;
       }
 
-      .hero-photo {
-        min-height: 520px;
-        max-height: 650px;
+      .organization-grid {
+        grid-template-columns:
+          repeat(2,1fr);
       }
 
-      .hero-photo img {
-        min-height: 520px;
-      }
-
-      .about-grid,
-      .tech-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .org-grid,
-      .feature-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .values-grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
     }
 
-    @media (max-width: 760px) {
+
+    @media (max-width: 800px) {
+
       .container {
-        width: min(100% - 28px, var(--container));
+        width:
+          calc(100% - 30px);
       }
 
-      .topbar-inner {
-        min-height: 68px;
+      .header-inner {
+        min-height: 70px;
       }
 
-      .brand-name {
-        font-size: 16px;
-      }
-
-      .nav-links {
-        position: absolute;
-        left: 14px;
-        right: 14px;
-        top: 68px;
+      .navigation {
         display: none;
-        flex-direction: column;
-        align-items: stretch;
-        gap: 0;
+
+        position: absolute;
+
+        left: 15px;
+        right: 15px;
+
+        top: 70px;
+
         padding: 8px;
-        background: #0b1220;
-        border: 1px solid rgba(255,255,255,0.08);
-        border-radius: 15px;
-        box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        background: #080b11;
+
+        border:
+          1px solid rgba(255,255,255,0.08);
+
+        border-radius: 14px;
       }
 
-      .nav-links.active {
+      .navigation.active {
         display: flex;
       }
 
-      .nav-links a {
-        padding: 13px;
-        border-radius: 10px;
+      .navigation a {
+        padding: 12px;
+
+        border-radius: 9px;
       }
 
-      .nav-links a:hover {
-        background: rgba(255,255,255,0.06);
+      .navigation a:hover {
+        background:
+          rgba(255,255,255,0.06);
       }
 
-      .menu-toggle {
+      .mobile-menu {
         display: block;
       }
 
-      .hero {
-        padding: 45px 0 65px;
+      .hero-inner {
+        grid-template-columns: 1fr;
+
+        padding: 45px 0 75px;
+
+        gap: 40px;
       }
 
-      .hero-grid {
+      .hero-image-wrap {
+        height: 500px;
+      }
+
+      .hero-title {
+        font-size: 47px;
+      }
+
+      .hero-details {
+        grid-template-columns: 1fr;
+      }
+
+      .milestones {
+        grid-template-columns: 1fr;
+      }
+
+      .milestone {
+        border-right: 0;
+
+        border-bottom:
+          1px solid var(--line);
+      }
+
+      .milestone:last-child {
+        border-bottom: 0;
+      }
+
+      .about-layout,
+      .technology-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .technology-grid {
         gap: 35px;
       }
 
-      .hero-photo {
-        min-height: 430px;
-        max-height: 540px;
-        border-radius: 22px;
-      }
-
-      .hero-photo img {
-        min-height: 430px;
-      }
-
-      .hero h1 {
-        font-size: 43px;
-        letter-spacing: -1.5px;
-      }
-
-      .hero-description {
-        font-size: 15px;
-      }
-
-      .hero-info {
+      .education {
         grid-template-columns: 1fr;
-      }
-
-      .metrics-grid {
-        grid-template-columns: 1fr;
-      }
-
-      section {
-        padding: 65px 0;
-      }
-
-      .org-grid,
-      .feature-grid,
-      .contact-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .timeline::before {
-        left: 5px;
-      }
-
-      .timeline-item {
-        grid-template-columns: 1fr;
-        gap: 10px;
-        padding-left: 25px;
-      }
-
-      .timeline-dot {
-        left: -1px;
-      }
-
-      .timeline-year {
-        font-size: 21px;
-      }
-
-      .education-item {
-        grid-template-columns: 1fr;
-        gap: 7px;
+        gap: 6px;
       }
 
       .education-result {
         text-align: left;
       }
 
-      .values-grid {
-        grid-template-columns: 1fr 1fr;
+      .social-grid {
+        grid-template-columns:
+          repeat(2,1fr);
       }
 
-      .profile-links {
-        grid-template-columns: 1fr 1fr;
+      .contact-grid {
+        grid-template-columns: 1fr;
       }
 
-      .quote-box {
-        padding: 40px 23px;
+    }
+
+
+    @media (max-width: 560px) {
+
+      .hero-title {
+        font-size: 39px;
+
+        letter-spacing: -1px;
+      }
+
+      .hero-role {
+        font-size: 17px;
+      }
+
+      .hero-image-wrap {
+        height: 430px;
+
+        border-radius: 21px;
+      }
+
+      .organization-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .technology-list {
+        grid-template-columns: 1fr;
+      }
+
+      .journey-item {
+        grid-template-columns: 1fr;
+
+        gap: 8px;
+
+        padding-left: 28px;
+      }
+
+      .journey-item::before {
+        left: 5px;
+      }
+
+      .journey-dot {
+        left: -1px;
+      }
+
+      .philosophy-box {
+        padding: 45px 23px;
+      }
+
+      .social-grid {
+        grid-template-columns: 1fr;
       }
 
       .footer-inner {
         flex-direction: column;
+
         align-items: flex-start;
       }
+
     }
 
-    @media (max-width: 420px) {
-      .hero h1 {
-        font-size: 37px;
-      }
-
-      .hero-actions {
-        flex-direction: column;
-      }
-
-      .btn {
-        width: 100%;
-      }
-
-      .profile-links,
-      .values-grid {
-        grid-template-columns: 1fr;
-      }
-    }
   </style>
 
-  <!-- Structured Data -->
+  <!-- =========================================================
+       STRUCTURED DATA
+  ========================================================== -->
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -1138,8 +1529,6 @@
     "mainEntity": {
       "@type": "Person",
       "name": "M Prasanna Kumar Reddy",
-      "givenName": "Prasanna Kumar",
-      "familyName": "Reddy",
       "alternateName": [
         "Madhu Sudhan Reddy Prasanna Kumar Reddy",
         "Prasanna Kumar Reddy",
@@ -1170,36 +1559,59 @@
     }
   }
   </script>
+
 </head>
+
 
 <body id="top">
 
-  <!-- =========================
+
+  <!-- =========================================================
        HEADER
-       NO PROFILE PHOTO HERE
-  ========================== -->
+       IMPORTANT: NO PROFILE PHOTO
+  ========================================================== -->
 
-  <header class="topbar">
-    <div class="container topbar-inner">
+  <header class="header">
 
-      <a href="#top" class="brand">
-        <span class="brand-name">
-          M Prasanna Kumar Reddy
-        </span>
+    <div class="container header-inner">
+
+      <a href="#top" class="header-name">
+        M Prasanna Kumar Reddy
       </a>
 
-      <nav class="nav-links" id="navLinks">
+      <nav class="navigation" id="navigation">
+
         <a href="#about">About</a>
-        <a href="#organizations">Organizations</a>
-        <a href="#journey">Journey</a>
-        <a href="#education">Education</a>
-        <a href="#profiles">Profiles</a>
-        <a href="#contact">Contact</a>
+
+        <a href="#organizations">
+          Organizations
+        </a>
+
+        <a href="#journey">
+          Journey
+        </a>
+
+        <a href="#technology">
+          PKR Tech
+        </a>
+
+        <a href="#education">
+          Education
+        </a>
+
+        <a href="#profiles">
+          Profiles
+        </a>
+
+        <a href="#contact" class="header-contact">
+          Contact
+        </a>
+
       </nav>
 
       <button
-        class="menu-toggle"
-        id="menuToggle"
+        class="mobile-menu"
+        id="mobileMenu"
         aria-label="Open navigation"
         aria-expanded="false"
       >
@@ -1207,206 +1619,305 @@
       </button>
 
     </div>
+
   </header>
 
 
-  <!-- =========================
+  <!-- =========================================================
        HERO
-  ========================== -->
+  ========================================================== -->
 
-  <main>
+  <section class="hero">
 
-    <section class="hero">
-      <div class="container hero-grid">
+    <div class="container hero-inner">
 
-        <div class="hero-photo">
-          <img
-            src="/assets/profile.jpg"
-            alt="M Prasanna Kumar Reddy"
+
+      <!-- FULL PROFILE PHOTO -->
+
+      <div class="hero-image-wrap">
+
+        <img
+          src="/assets/profile.jpg"
+          alt="M Prasanna Kumar Reddy"
+        >
+
+        <div class="hero-image-overlay"></div>
+
+        <div class="photo-label">
+          Official Profile
+        </div>
+
+      </div>
+
+
+      <!-- HERO CONTENT -->
+
+      <div class="hero-content">
+
+        <div class="hero-kicker">
+          Founder · Entrepreneur · Technology
+        </div>
+
+        <h1 class="hero-title">
+          M Prasanna
+          <span>Kumar Reddy</span>
+        </h1>
+
+        <div class="hero-role">
+          Founder & CEO · PKR Groups
+        </div>
+
+        <p class="hero-text">
+          M Prasanna Kumar Reddy is an entrepreneur and
+          engineering student associated with PKR Groups,
+          with interests spanning business development,
+          technology, e-commerce and enterprise-oriented
+          innovation.
+        </p>
+
+
+        <div class="hero-details">
+
+          <div class="hero-detail">
+
+            <small>
+              Date of Birth
+            </small>
+
+            <strong>
+              6 September 2005
+            </strong>
+
+          </div>
+
+
+          <div class="hero-detail">
+
+            <small>
+              Birthplace
+            </small>
+
+            <strong>
+              Nayanapalle, Kuppam
+            </strong>
+
+          </div>
+
+
+          <div class="hero-detail">
+
+            <small>
+              Current City
+            </small>
+
+            <strong>
+              Bengaluru, Karnataka
+            </strong>
+
+          </div>
+
+
+          <div class="hero-detail">
+
+            <small>
+              Nationality
+            </small>
+
+            <strong>
+              Indian
+            </strong>
+
+          </div>
+
+        </div>
+
+
+        <div class="hero-buttons">
+
+          <a
+            href="#about"
+            class="button button-gold"
           >
-        </div>
+            Explore Profile
+          </a>
 
-        <div class="hero-content">
-
-          <div class="eyebrow">
-            Official Profile
-          </div>
-
-          <h1>
-            M Prasanna Kumar Reddy
-          </h1>
-
-          <div class="hero-role">
-            Founder & CEO · PKR Groups
-          </div>
-
-          <p class="hero-description">
-            M Prasanna Kumar Reddy is an entrepreneur and engineering student
-            associated with PKR Groups, with interests spanning business,
-            technology, e-commerce and enterprise development.
-          </p>
-
-          <div class="hero-info">
-
-            <div class="info-card">
-              <span class="info-label">Born</span>
-              <span class="info-value">
-                6 September 2005
-              </span>
-            </div>
-
-            <div class="info-card">
-              <span class="info-label">Birthplace</span>
-              <span class="info-value">
-                Nayanapalle, Kuppam
-              </span>
-            </div>
-
-            <div class="info-card">
-              <span class="info-label">Current City</span>
-              <span class="info-value">
-                Bengaluru, Karnataka
-              </span>
-            </div>
-
-            <div class="info-card">
-              <span class="info-label">Nationality</span>
-              <span class="info-value">
-                Indian
-              </span>
-            </div>
-
-          </div>
-
-          <div class="hero-actions">
-            <a href="#about" class="btn btn-primary">
-              Explore Profile
-            </a>
-
-            <a href="#organizations" class="btn btn-outline">
-              PKR Organizations
-            </a>
-          </div>
+          <a
+            href="#organizations"
+            class="button button-outline"
+          >
+            PKR Groups
+          </a>
 
         </div>
 
       </div>
-    </section>
 
-
-    <!-- =========================
-         METRICS
-    ========================== -->
-
-    <div class="metrics">
-      <div class="container metrics-grid">
-
-        <div class="metric">
-          <div class="metric-number">2019</div>
-          <div class="metric-label">
-            Entrepreneurial journey began
-          </div>
-        </div>
-
-        <div class="metric">
-          <div class="metric-number">2025</div>
-          <div class="metric-label">
-            PKR Enterprises established
-          </div>
-        </div>
-
-        <div class="metric">
-          <div class="metric-number">2026</div>
-          <div class="metric-label">
-            PKR Tech established
-          </div>
-        </div>
-
-      </div>
     </div>
 
+  </section>
 
-    <!-- =========================
-         ABOUT
-    ========================== -->
 
-    <section id="about">
-      <div class="container">
+  <!-- =========================================================
+       MILESTONES
+  ========================================================== -->
 
-        <div class="section-heading">
-          <div class="section-kicker">
-            Profile
-          </div>
+  <div class="milestone-section">
 
-          <h2>
-            About M Prasanna Kumar Reddy
-          </h2>
+    <div class="container milestones">
 
-          <p>
-            A concise overview of personal background and professional identity.
-          </p>
+      <div class="milestone">
+
+        <div class="milestone-year">
+          2019
         </div>
 
-        <div class="about-grid">
+        <div class="milestone-text">
+          Entrepreneurial journey began
+        </div>
 
-          <div class="card">
-            <h3>
-              Entrepreneur & Founder
-            </h3>
+      </div>
 
-            <p>
-              M Prasanna Kumar Reddy began his entrepreneurial journey in 2019
-              and continued developing business initiatives across different
-              areas. His current professional identity is associated with
-              PKR Groups, including PKR Enterprises and PKR Tech.
-            </p>
 
-            <br>
+      <div class="milestone">
 
-            <p>
-              His work combines business development, technology,
-              e-commerce and engineering-oriented interests.
-            </p>
-          </div>
+        <div class="milestone-year">
+          2025
+        </div>
 
-          <div class="card">
+        <div class="milestone-text">
+          PKR Enterprises established
+        </div>
 
-            <h3>
-              Personal Details
-            </h3>
+      </div>
 
-            <div class="detail-list">
 
-              <div class="detail-row">
-                <span>Full Name</span>
-                <span>Madhu Sudhan Reddy Prasanna Kumar Reddy</span>
-              </div>
+      <div class="milestone">
 
-              <div class="detail-row">
-                <span>Display Name</span>
-                <span>M Prasanna Kumar Reddy</span>
-              </div>
+        <div class="milestone-year">
+          2026
+        </div>
 
-              <div class="detail-row">
-                <span>Date of Birth</span>
-                <span>6 September 2005</span>
-              </div>
+        <div class="milestone-text">
+          PKR Tech established
+        </div>
 
-              <div class="detail-row">
-                <span>Birthplace</span>
-                <span>Nayanapalle, Kuppam</span>
-              </div>
+      </div>
 
-              <div class="detail-row">
-                <span>Current City</span>
-                <span>Bengaluru, Karnataka</span>
-              </div>
+    </div>
 
-              <div class="detail-row">
-                <span>Professional Role</span>
-                <span>Founder & CEO</span>
-              </div>
+  </div>
 
+
+  <!-- =========================================================
+       ABOUT
+  ========================================================== -->
+
+  <section class="section section-light" id="about">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div class="section-label">
+          Profile
+        </div>
+
+        <h2 class="section-title">
+          About M Prasanna Kumar Reddy
+        </h2>
+
+        <p class="section-description">
+          Professional background, personal details and
+          current organizational association.
+        </p>
+
+      </div>
+
+
+      <div class="about-layout">
+
+
+        <div class="about-main">
+
+          <h3>
+            Entrepreneur & Founder
+          </h3>
+
+          <p>
+            M Prasanna Kumar Reddy began his entrepreneurial
+            journey in 2019 at the age of 14, exploring
+            different business ideas and learning through
+            practical experience.
+          </p>
+
+          <p>
+            In 2024, he pursued a travel agency venture.
+            From August 2025, he began selling products
+            through Meesho.
+          </p>
+
+          <p>
+            PKR Enterprises was established in November 2025,
+            followed by PKR Tech in August 2026.
+          </p>
+
+          <p>
+            His current professional interests include
+            entrepreneurship, technology, e-commerce and
+            engineering-oriented development.
+          </p>
+
+        </div>
+
+
+        <div class="about-side">
+
+          <h3>
+            Personal Profile
+          </h3>
+
+          <div class="personal-list">
+
+            <div class="personal-row">
+              <span>Name</span>
+              <strong>
+                M Prasanna Kumar Reddy
+              </strong>
+            </div>
+
+            <div class="personal-row">
+              <span>Full Name</span>
+              <strong>
+                Madhu Sudhan Reddy Prasanna Kumar Reddy
+              </strong>
+            </div>
+
+            <div class="personal-row">
+              <span>Born</span>
+              <strong>
+                6 September 2005
+              </strong>
+            </div>
+
+            <div class="personal-row">
+              <span>Birthplace</span>
+              <strong>
+                Nayanapalle, Kuppam
+              </strong>
+            </div>
+
+            <div class="personal-row">
+              <span>Role</span>
+              <strong>
+                Founder & CEO
+              </strong>
+            </div>
+
+            <div class="personal-row">
+              <span>Associated With</span>
+              <strong>
+                PKR Groups
+              </strong>
             </div>
 
           </div>
@@ -1414,790 +1925,736 @@
         </div>
 
       </div>
-    </section>
+
+    </div>
+
+  </section>
 
 
-    <!-- =========================
-         ORGANIZATIONS
-    ========================== -->
+  <!-- =========================================================
+       ORGANIZATIONS
+  ========================================================== -->
 
-    <section id="organizations" class="organizations">
-      <div class="container">
+  <section
+    class="section section-white"
+    id="organizations"
+  >
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div class="section-label">
+          PKR Groups
+        </div>
+
+        <h2 class="section-title">
+          Organizations
+        </h2>
+
+        <p class="section-description">
+          Organizations associated with M Prasanna Kumar Reddy.
+        </p>
+
+      </div>
+
+
+      <div class="organization-grid">
+
+
+        <article class="organization">
+
+          <div class="organization-number">
+            ORGANIZATION 01
+          </div>
+
+          <h3>
+            PKR Enterprises
+          </h3>
+
+          <div class="organization-role">
+            CEO & Director
+          </div>
+
+          <p>
+            A business organization associated with PKR Groups,
+            with sectors including AKSHIRA and AMRIT.
+          </p>
+
+          <div class="organization-footer">
+            Established · 11 November 2025
+          </div>
+
+        </article>
+
+
+        <article class="organization">
+
+          <div class="organization-number">
+            ORGANIZATION 02
+          </div>
+
+          <h3>
+            PKR Tech
+          </h3>
+
+          <div class="organization-role">
+            CEO & Director
+          </div>
+
+          <p>
+            A technology-focused organization working across
+            software development, artificial intelligence,
+            e-commerce and enterprise technology.
+          </p>
+
+          <div class="organization-footer">
+            Established · August 2026
+          </div>
+
+        </article>
+
+
+        <article class="organization">
+
+          <div class="organization-number">
+            ORGANIZATION 03
+          </div>
+
+          <h3>
+            MSR Charitable Trust
+          </h3>
+
+          <div class="organization-role">
+            Chairman & Director
+          </div>
+
+          <p>
+            A community-focused charitable initiative
+            associated with the PKR Groups ecosystem.
+          </p>
+
+          <div class="organization-footer">
+            Head Office · Nayanapalle, Kuppam
+          </div>
+
+        </article>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================================================
+       ENTREPRENEURIAL JOURNEY
+  ========================================================== -->
+
+  <section
+    class="section journey-section"
+    id="journey"
+  >
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div class="section-label">
+          Journey
+        </div>
+
+        <h2 class="section-title">
+          Entrepreneurial Journey
+        </h2>
+
+        <p class="section-description">
+          Selected milestones from the entrepreneurial journey.
+        </p>
+
+      </div>
+
+
+      <div class="journey">
+
+
+        <div class="journey-item">
+
+          <div class="journey-year">
+            2019
+          </div>
+
+          <div class="journey-dot"></div>
+
+          <div class="journey-card">
+
+            <h3>
+              Entrepreneurial Beginning
+            </h3>
+
+            <p>
+              Started the entrepreneurial journey at the
+              age of 14, experimenting with different
+              business ventures.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="journey-item">
+
+          <div class="journey-year">
+            2024
+          </div>
+
+          <div class="journey-dot"></div>
+
+          <div class="journey-card">
+
+            <h3>
+              Travel Agency Venture
+            </h3>
+
+            <p>
+              Pursued a travel agency venture as part of
+              continued entrepreneurial experience.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="journey-item">
+
+          <div class="journey-year">
+            Aug 2025
+          </div>
+
+          <div class="journey-dot"></div>
+
+          <div class="journey-card">
+
+            <h3>
+              Meesho
+            </h3>
+
+            <p>
+              Began selling products through Meesho from
+              August 2025.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="journey-item">
+
+          <div class="journey-year">
+            Nov 2025
+          </div>
+
+          <div class="journey-dot"></div>
+
+          <div class="journey-card">
+
+            <h3>
+              PKR Enterprises
+            </h3>
+
+            <p>
+              PKR Enterprises was established on
+              11 November 2025.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="journey-item">
+
+          <div class="journey-year">
+            Aug 2026
+          </div>
+
+          <div class="journey-dot"></div>
+
+          <div class="journey-card">
+
+            <h3>
+              PKR Tech
+            </h3>
+
+            <p>
+              PKR Tech was established in August 2026
+              as a technology-focused organization.
+            </p>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================================================
+       PKR TECH
+  ========================================================== -->
+
+  <section
+    class="section technology"
+    id="technology"
+  >
+
+    <div class="container technology-grid">
+
+
+      <div>
 
         <div class="section-heading">
-          <div class="section-kicker">
+
+          <div class="section-label">
+            Technology Organization
+          </div>
+
+          <h2 class="section-title">
+            PKR Tech
+          </h2>
+
+          <p class="section-description">
+            PKR Tech is a technology-focused organization
+            associated with M Prasanna Kumar Reddy and
+            PKR Groups.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="technology-list">
+
+        <div class="technology-item">
+
+          <strong>
+            Software Development
+          </strong>
+
+          <span>
+            Software and digital technology solutions.
+          </span>
+
+        </div>
+
+
+        <div class="technology-item">
+
+          <strong>
+            Artificial Intelligence
+          </strong>
+
+          <span>
+            AI-focused applications and integrated
+            technology solutions.
+          </span>
+
+        </div>
+
+
+        <div class="technology-item">
+
+          <strong>
+            E-Commerce
+          </strong>
+
+          <span>
+            SARVAMPADA e-commerce technology platform.
+          </span>
+
+        </div>
+
+
+        <div class="technology-item">
+
+          <strong>
+            Enterprise Technology
+          </strong>
+
+          <span>
+            ERP, CRM and technology-oriented business systems.
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================================================
+       EDUCATION
+  ========================================================== -->
+
+  <section
+    class="section section-light"
+    id="education"
+  >
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div class="section-label">
+          Academic Background
+        </div>
+
+        <h2 class="section-title">
+          Education
+        </h2>
+
+      </div>
+
+
+      <div class="education-list">
+
+
+        <div class="education">
+
+          <div class="education-year">
+            Till 2019
+          </div>
+
+          <div>
+
+            <h3>
+              Pragathi Vidya Samasthe
+            </h3>
+
+            <p>
+              School education
+            </p>
+
+          </div>
+
+          <div class="education-result">
+            Till 8th
+          </div>
+
+        </div>
+
+
+        <div class="education">
+
+          <div class="education-year">
+            2021
+          </div>
+
+          <div>
+
+            <h3>
+              Rural High School, Kyasamballi
+            </h3>
+
+            <p>
+              Secondary School Education
+            </p>
+
+          </div>
+
+          <div class="education-result">
+            90.4%
+          </div>
+
+        </div>
+
+
+        <div class="education">
+
+          <div class="education-year">
+            2023
+          </div>
+
+          <div>
+
+            <h3>
+              Sri Byraweshwara Rural Composite PU College
+            </h3>
+
+            <p>
+              PUC / 12th Standard
+            </p>
+
+          </div>
+
+          <div class="education-result">
+            78.33%
+          </div>
+
+        </div>
+
+
+        <div class="education">
+
+          <div class="education-year">
+            2023–2027
+          </div>
+
+          <div>
+
+            <h3>
+              East Point College of Engineering and Technology
+            </h3>
+
+            <p>
+              Mechanical Engineering · VTU
+            </p>
+
+          </div>
+
+          <div class="education-result">
+            Expected 2027
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================================================
+       PHILOSOPHY
+  ========================================================== -->
+
+  <section class="section philosophy">
+
+    <div class="container">
+
+      <div class="section-heading"
+        style="margin-left:auto;margin-right:auto;">
+
+        <div class="section-label">
+          PKR Philosophy
+        </div>
+
+        <h2 class="section-title">
+          Brand Philosophy
+        </h2>
+
+      </div>
+
+
+      <div class="philosophy-box">
+
+        <div class="philosophy-mark">
+          “
+        </div>
+
+        <div class="philosophy-text">
+          Quality Is Not Our Promise,
+          It's Our Identity.
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================================================
+       OFFICIAL PROFILES
+  ========================================================== -->
+
+  <section
+    class="section section-light"
+    id="profiles"
+  >
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div class="section-label">
+          Online Presence
+        </div>
+
+        <h2 class="section-title">
+          Official Profiles
+        </h2>
+
+        <p class="section-description">
+          Public professional and social profiles
+          associated with M Prasanna Kumar Reddy.
+        </p>
+
+      </div>
+
+
+      <div class="social-grid">
+
+        <a
+          class="social"
+          href="https://www.linkedin.com/in/m-prasanna-kumar-reddy-5b5b102a4/"
+          target="_blank"
+          rel="noopener"
+        >
+          LinkedIn
+        </a>
+
+        <a
+          class="social"
+          href="https://x.com/Prasanna161118"
+          target="_blank"
+          rel="noopener"
+        >
+          X
+        </a>
+
+        <a
+          class="social"
+          href="https://www.instagram.com/prasanna_kumar_reddy_m/"
+          target="_blank"
+          rel="noopener"
+        >
+          Instagram
+        </a>
+
+        <a
+          class="social"
+          href="https://www.facebook.com/share/1F6C365tq8/"
+          target="_blank"
+          rel="noopener"
+        >
+          Facebook
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================================================
+       CONTACT
+  ========================================================== -->
+
+  <section
+    class="section section-white"
+    id="contact"
+  >
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div class="section-label">
+          Professional Contact
+        </div>
+
+        <h2 class="section-title">
+          Contact
+        </h2>
+
+        <p class="section-description">
+          Professional contact information associated
+          with the PKR Groups organizations.
+        </p>
+
+      </div>
+
+
+      <div class="contact-grid">
+
+
+        <div class="contact-card">
+
+          <h3>
+            PKR Enterprises
+          </h3>
+
+          <div class="contact-role">
+            CEO & Director
+          </div>
+
+          <div class="contact-row">
+            <strong>Email:</strong>
+            pkrenterprises.co@gmail.com
+          </div>
+
+          <div class="contact-row">
+            <strong>Phone:</strong>
+            8088804976
+          </div>
+
+          <div class="contact-row">
+            <strong>Head Office:</strong>
+            Bengaluru, Karnataka
+          </div>
+
+        </div>
+
+
+        <div class="contact-card">
+
+          <h3>
+            PKR Groups
+          </h3>
+
+          <div class="contact-role">
+            Founder & CEO
+          </div>
+
+          <div class="contact-row">
+            <strong>Name:</strong>
+            M Prasanna Kumar Reddy
+          </div>
+
+          <div class="contact-row">
+            <strong>Organization:</strong>
             PKR Groups
           </div>
 
-          <h2>
-            Organizations
-          </h2>
-
-          <p>
-            Organizations associated with M Prasanna Kumar Reddy.
-          </p>
-        </div>
-
-        <div class="org-grid">
-
-          <article class="org-card">
-
-            <div class="org-number">
-              01
-            </div>
-
-            <h3>
-              PKR Enterprises
-            </h3>
-
-            <div class="org-role">
-              CEO & Director
-            </div>
-
-            <p>
-              A business organization associated with the PKR Groups
-              ecosystem, with sectors including AKSHIRA and AMRIT.
-            </p>
-
-            <div class="org-meta">
-              Established · 11 November 2025
-            </div>
-
-          </article>
-
-
-          <article class="org-card">
-
-            <div class="org-number">
-              02
-            </div>
-
-            <h3>
-              PKR Tech
-            </h3>
-
-            <div class="org-role">
-              CEO & Director
-            </div>
-
-            <p>
-              Technology-focused organization working across software,
-              artificial intelligence, e-commerce and enterprise technology.
-            </p>
-
-            <div class="org-meta">
-              Established · August 2026
-            </div>
-
-          </article>
-
-
-          <article class="org-card">
-
-            <div class="org-number">
-              03
-            </div>
-
-            <h3>
-              MSR Charitable Trust
-            </h3>
-
-            <div class="org-role">
-              Chairman & Director
-            </div>
-
-            <p>
-              A community-focused charitable initiative associated with
-              the PKR Groups ecosystem.
-            </p>
-
-            <div class="org-meta">
-              Head Office · Nayanapalle, Kuppam
-            </div>
-
-          </article>
-
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- =========================
-         BUSINESS & TECHNOLOGY
-    ========================== -->
-
-    <section>
-      <div class="container">
-
-        <div class="section-heading">
-          <div class="section-kicker">
-            Areas of Work
-          </div>
-
-          <h2>
-            Business & Technology
-          </h2>
-
-          <p>
-            Key areas associated with the professional and entrepreneurial
-            work of M Prasanna Kumar Reddy.
-          </p>
-        </div>
-
-        <div class="feature-grid">
-
-          <article class="feature-card">
-
-            <div class="feature-icon">
-              ◇
-            </div>
-
-            <h3>
-              Entrepreneurship
-            </h3>
-
-            <p>
-              Building and developing business initiatives through
-              PKR Groups and its associated organizations.
-            </p>
-
-          </article>
-
-
-          <article class="feature-card">
-
-            <div class="feature-icon">
-              AI
-            </div>
-
-            <h3>
-              Artificial Intelligence
-            </h3>
-
-            <p>
-              Exploring AI-integrated software and technology solutions
-              through PKR Tech.
-            </p>
-
-          </article>
-
-
-          <article class="feature-card">
-
-            <div class="feature-icon">
-              ◈
-            </div>
-
-            <h3>
-              E-Commerce
-            </h3>
-
-            <p>
-              SARVAMPADA is an e-commerce technology product associated
-              with PKR Tech.
-            </p>
-
-          </article>
-
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- =========================
-         ENTREPRENEURIAL JOURNEY
-    ========================== -->
-
-    <section id="journey" class="journey">
-      <div class="container">
-
-        <div class="section-heading">
-          <div class="section-kicker">
-            Journey
-          </div>
-
-          <h2>
-            Entrepreneurial Journey
-          </h2>
-
-          <p>
-            Selected milestones from the entrepreneurial journey.
-          </p>
-        </div>
-
-        <div class="timeline">
-
-          <div class="timeline-item">
-
-            <div class="timeline-year">
-              2019
-            </div>
-
-            <div class="timeline-dot"></div>
-
-            <div class="timeline-content">
-              <h3>
-                Entrepreneurial Beginning
-              </h3>
-
-              <p>
-                Started the entrepreneurial journey at the age of 14,
-                experimenting with different small business ventures.
-              </p>
-            </div>
-
-          </div>
-
-
-          <div class="timeline-item">
-
-            <div class="timeline-year">
-              2024
-            </div>
-
-            <div class="timeline-dot"></div>
-
-            <div class="timeline-content">
-              <h3>
-                Travel Agency Venture
-              </h3>
-
-              <p>
-                Started a travel agency venture as part of continued
-                entrepreneurial experimentation.
-              </p>
-            </div>
-
-          </div>
-
-
-          <div class="timeline-item">
-
-            <div class="timeline-year">
-              Aug 2025
-            </div>
-
-            <div class="timeline-dot"></div>
-
-            <div class="timeline-content">
-              <h3>
-                Meesho
-              </h3>
-
-              <p>
-                Began selling products through Meesho from August 2025.
-              </p>
-            </div>
-
-          </div>
-
-
-          <div class="timeline-item">
-
-            <div class="timeline-year">
-              Nov 2025
-            </div>
-
-            <div class="timeline-dot"></div>
-
-            <div class="timeline-content">
-              <h3>
-                PKR Enterprises
-              </h3>
-
-              <p>
-                PKR Enterprises was established on 11 November 2025.
-              </p>
-            </div>
-
-          </div>
-
-
-          <div class="timeline-item">
-
-            <div class="timeline-year">
-              Aug 2026
-            </div>
-
-            <div class="timeline-dot"></div>
-
-            <div class="timeline-content">
-              <h3>
-                PKR Tech
-              </h3>
-
-              <p>
-                PKR Tech was established in August 2026 as a
-                technology-focused organization.
-              </p>
-            </div>
-
+          <div class="contact-row">
+            <strong>Professional Role:</strong>
+            Founder & CEO
           </div>
 
         </div>
 
-      </div>
-    </section>
-
-
-    <!-- =========================
-         EDUCATION
-    ========================== -->
-
-    <section id="education">
-      <div class="container">
-
-        <div class="section-heading">
-          <div class="section-kicker">
-            Academic Background
-          </div>
-
-          <h2>
-            Education
-          </h2>
-
-          <p>
-            Academic background of M Prasanna Kumar Reddy.
-          </p>
-        </div>
-
-        <div class="education-grid">
-
-          <div class="education-item">
-
-            <div class="education-year">
-              Till 2019
-            </div>
-
-            <div>
-              <h3>
-                Pragathi Vidya Samasthe
-              </h3>
-
-              <p>
-                School education
-              </p>
-            </div>
-
-            <div class="education-result">
-              Till 8th
-            </div>
-
-          </div>
-
-
-          <div class="education-item">
-
-            <div class="education-year">
-              2021
-            </div>
-
-            <div>
-              <h3>
-                Rural High School, Kyasamballi
-              </h3>
-
-              <p>
-                Secondary School Education
-              </p>
-            </div>
-
-            <div class="education-result">
-              90.4%
-            </div>
-
-          </div>
-
-
-          <div class="education-item">
-
-            <div class="education-year">
-              2023
-            </div>
-
-            <div>
-              <h3>
-                Sri Byraweshwara Rural Composite PU College
-              </h3>
-
-              <p>
-                PUC / 12th Standard
-              </p>
-            </div>
-
-            <div class="education-result">
-              78.33%
-            </div>
-
-          </div>
-
-
-          <div class="education-item">
-
-            <div class="education-year">
-              2023–2027
-            </div>
-
-            <div>
-              <h3>
-                East Point College of Engineering and Technology
-              </h3>
-
-              <p>
-                Mechanical Engineering · VTU
-              </p>
-            </div>
-
-            <div class="education-result">
-              Expected 2027
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- =========================
-         PKR TECH
-    ========================== -->
-
-    <section class="tech-section">
-
-      <div class="container tech-grid">
-
-        <div>
-
-          <div class="section-heading">
-
-            <div class="section-kicker">
-              Technology
-            </div>
-
-            <h2>
-              PKR Tech
-            </h2>
-
-            <p>
-              A technology-focused organization associated with
-              M Prasanna Kumar Reddy and PKR Groups.
-            </p>
-
-          </div>
-
-        </div>
-
-
-        <div class="tech-list">
-
-          <div class="tech-item">
-            <strong>
-              Software Development
-            </strong>
-
-            <span>
-              Development of software and digital technology solutions.
-            </span>
-          </div>
-
-          <div class="tech-item">
-            <strong>
-              Artificial Intelligence
-            </strong>
-
-            <span>
-              AI-focused applications and integrated technology solutions.
-            </span>
-          </div>
-
-          <div class="tech-item">
-            <strong>
-              E-Commerce
-            </strong>
-
-            <span>
-              SARVAMPADA e-commerce technology platform.
-            </span>
-          </div>
-
-          <div class="tech-item">
-            <strong>
-              Enterprise Technology
-            </strong>
-
-            <span>
-              ERP, CRM and other technology-oriented business systems.
-            </span>
-          </div>
-
-        </div>
 
       </div>
 
-    </section>
+    </div>
 
+  </section>
 
-    <!-- =========================
-         BRAND PHILOSOPHY
-    ========================== -->
 
-    <section class="philosophy">
-
-      <div class="container">
-
-        <div class="section-heading" style="margin-left:auto;margin-right:auto;">
-          <div class="section-kicker">
-            PKR Philosophy
-          </div>
-
-          <h2>
-            Brand Philosophy
-          </h2>
-        </div>
-
-        <div class="quote-box">
-
-          <div class="quote-mark">
-            “
-          </div>
-
-          <blockquote>
-            Quality Is Not Our Promise, It's Our Identity.
-          </blockquote>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =========================
-         VALUES
-    ========================== -->
-
-    <section>
-
-      <div class="container">
-
-        <div class="section-heading">
-          <div class="section-kicker">
-            Principles
-          </div>
-
-          <h2>
-            Core Values
-          </h2>
-        </div>
-
-        <div class="values-grid">
-
-          <div class="value">
-            <strong>Quality</strong>
-            <span>Commitment to quality</span>
-          </div>
-
-          <div class="value">
-            <strong>Trust</strong>
-            <span>Building lasting trust</span>
-          </div>
-
-          <div class="value">
-            <strong>Loyalty</strong>
-            <span>Long-term relationships</span>
-          </div>
-
-          <div class="value">
-            <strong>Innovation</strong>
-            <span>Technology and ideas</span>
-          </div>
-
-          <div class="value">
-            <strong>Service</strong>
-            <span>Creating useful value</span>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =========================
-         OFFICIAL PROFILES
-    ========================== -->
-
-    <section id="profiles" class="profiles">
-
-      <div class="container">
-
-        <div class="section-heading">
-
-          <div class="section-kicker">
-            Online Presence
-          </div>
-
-          <h2>
-            Official Profiles
-          </h2>
-
-          <p>
-            Public social and professional profiles associated with
-            M Prasanna Kumar Reddy.
-          </p>
-
-        </div>
-
-        <div class="profile-links">
-
-          <a
-            class="profile-link"
-            href="https://www.linkedin.com/in/m-prasanna-kumar-reddy-5b5b102a4/"
-            target="_blank"
-            rel="noopener"
-          >
-            LinkedIn
-          </a>
-
-          <a
-            class="profile-link"
-            href="https://x.com/Prasanna161118"
-            target="_blank"
-            rel="noopener"
-          >
-            X
-          </a>
-
-          <a
-            class="profile-link"
-            href="https://www.instagram.com/prasanna_kumar_reddy_m/"
-            target="_blank"
-            rel="noopener"
-          >
-            Instagram
-          </a>
-
-          <a
-            class="profile-link"
-            href="https://www.facebook.com/share/1F6C365tq8/"
-            target="_blank"
-            rel="noopener"
-          >
-            Facebook
-          </a>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =========================
-         CONTACT
-    ========================== -->
-
-    <section id="contact">
-
-      <div class="container">
-
-        <div class="section-heading">
-
-          <div class="section-kicker">
-            Contact
-          </div>
-
-          <h2>
-            Professional Contact
-          </h2>
-
-          <p>
-            Contact details associated with the PKR Groups organizations.
-          </p>
-
-        </div>
-
-
-        <div class="contact-grid">
-
-          <div class="contact-card">
-
-            <h3>
-              PKR Enterprises
-            </h3>
-
-            <p>
-              CEO & Director
-            </p>
-
-            <div class="contact-item">
-              <strong>Email:</strong>
-              pkrenterprises.co@gmail.com
-            </div>
-
-            <div class="contact-item">
-              <strong>Phone:</strong>
-              8088804976
-            </div>
-
-            <div class="contact-item">
-              <strong>Head Office:</strong>
-              Bengaluru, Karnataka
-            </div>
-
-          </div>
-
-
-          <div class="contact-card">
-
-            <h3>
-              PKR Groups
-            </h3>
-
-            <p>
-              Professional identity associated with PKR Groups.
-            </p>
-
-            <div class="contact-item">
-              <strong>Name:</strong>
-              M Prasanna Kumar Reddy
-            </div>
-
-            <div class="contact-item">
-              <strong>Role:</strong>
-              Founder & CEO
-            </div>
-
-            <div class="contact-item">
-              <strong>Organization:</strong>
-              PKR Groups
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-  </main>
-
-
-  <!-- =========================
+  <!-- =========================================================
        FOOTER
-  ========================== -->
+  ========================================================== -->
 
-  <footer>
+  <footer class="footer">
 
     <div class="container footer-inner">
 
-      <div class="footer-brand">
+      <div class="footer-name">
         M Prasanna Kumar Reddy
       </div>
 
@@ -2214,33 +2671,62 @@
   </footer>
 
 
-  <!-- =========================
+  <!-- =========================================================
        JAVASCRIPT
-  ========================== -->
+  ========================================================== -->
 
   <script>
-    const menuToggle = document.getElementById("menuToggle");
-    const navLinks = document.getElementById("navLinks");
 
-    menuToggle.addEventListener("click", () => {
-      const isOpen = navLinks.classList.toggle("active");
+    const mobileMenu =
+      document.getElementById("mobileMenu");
 
-      menuToggle.setAttribute(
-        "aria-expanded",
-        isOpen ? "true" : "false"
-      );
+    const navigation =
+      document.getElementById("navigation");
 
-      menuToggle.textContent = isOpen ? "✕" : "☰";
-    });
 
-    document.querySelectorAll(".nav-links a").forEach(link => {
-      link.addEventListener("click", () => {
-        navLinks.classList.remove("active");
-        menuToggle.setAttribute("aria-expanded", "false");
-        menuToggle.textContent = "☰";
+    mobileMenu.addEventListener(
+      "click",
+      function () {
+
+        const opened =
+          navigation.classList.toggle("active");
+
+        mobileMenu.setAttribute(
+          "aria-expanded",
+          opened ? "true" : "false"
+        );
+
+        mobileMenu.textContent =
+          opened ? "✕" : "☰";
+
+      }
+    );
+
+
+    document
+      .querySelectorAll(".navigation a")
+      .forEach(function(link) {
+
+        link.addEventListener(
+          "click",
+          function() {
+
+            navigation.classList.remove("active");
+
+            mobileMenu.setAttribute(
+              "aria-expanded",
+              "false"
+            );
+
+            mobileMenu.textContent = "☰";
+
+          }
+        );
+
       });
-    });
+
   </script>
+
 
 </body>
 </html>
