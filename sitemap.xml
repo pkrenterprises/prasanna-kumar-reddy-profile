@@ -1,22 +1,166 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <urlset
-        xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <url>
+    <!-- Main Profile -->
+    <url>
+        <loc>https://prasannakumarreddy.sarvampada.info/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
 
-    <loc>
-      https://prasannakumarreddy.sarvampada.info/
-    </loc>
+    <!-- About Prasanna Kumar Reddy -->
+    <url>
+        <loc>https://prasannakumarreddy.sarvampada.info/about</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
 
-    <changefreq>
-      monthly
-    </changefreq>
+    <!-- Founder / CEO Profile -->
+    <url>
+        <loc>https://prasannakumarreddy.sarvampada.info/ceo</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
 
-    <priority>
-      1.0
-    </priority>
+    <!-- PKR Groups -->
+    <url>
+        <loc>https://prasannakumarreddy.sarvampada.info/pkr-groups</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
 
-  </url>
+    <!-- PKR Enterprises -->
+    <url>
+        <loc>https://prasannakumarreddy.sarvampada.info/pkr-enterprises</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- VAYUPRABA Technologies -->
+    <url>
+        <loc>https://prasannakumarreddy.sarvampada.info/vayupraba-technologies</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- SHRIVAINA -->
+    <url>
+        <loc>https://prasannakumarreddy.sarvampada.info/shrivaina</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- SARVAMPADA -->
+    <url>
+        <loc>https://prasannakumarreddy.sarvampada.info/sarvampada</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- AKSHIRA -->
+    <url>
+        <loc>https://prasannakumarreddy.sarvampada.info/akshira</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- KR Nurseries -->
+    <url>
+        <loc>https://prasannakumarreddy.sarvampada.info/kr-nurseries</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- KSHITRIVA -->
+    <url>
+        <loc>https://prasannakumarreddy.sarvampada.info/kshit­riva</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- AMRIT -->
+    <url>
+        <loc>https://prasannakumarreddy.sarvampada.info/amrit</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- MSR Charitable Trust -->
+    <url>
+        <loc>https://prasannakumarreddy.sarvampada.info/msr-charitable-trust</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- MSR Milk & Ghee -->
+    <url>
+        <loc>https://prasannakumarreddy.sarvampada.info/msr-milk-ghee</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Leadership -->
+    <url>
+        <loc>https://prasannakumarreddy.sarvampada.info/leadership</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Business & Entrepreneurship -->
+    <url>
+        <loc>https://prasannakumarreddy.sarvampada.info/business</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Agriculture -->
+    <url>
+        <loc>https://prasannakumarreddy.sarvampada.info/agriculture</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Public Service -->
+    <url>
+        <loc>https://prasannakumarreddy.sarvampada.info/public-service</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Projects -->
+    <url>
+        <loc>https://prasannakumarreddy.sarvampada.info/projects</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Kuppam Development -->
+    <url>
+        <loc>https://prasannakumarreddy.sarvampada.info/kuppam</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Media -->
+    <url>
+        <loc>https://prasannakumarreddy.sarvampada.info/media</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Gallery -->
+    <url>
+        <loc>https://prasannakumarreddy.sarvampada.info/gallery</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- Contact -->
+    <url>
+        <loc>https://prasannakumarreddy.sarvampada.info/contact</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
 
 </urlset>
